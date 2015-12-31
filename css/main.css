@@ -1,0 +1,22 @@
+body {
+	margin-right: 20%;
+	margin-left: 20%;
+}
+nav{
+	background-color: white;
+}
+main{
+	background-image: url("../img/slide-bg-complexity.jpg");
+}
+#toDoSection{
+	background-color: blue;
+}
+#whatHappenSection{
+	background-image: url("../img/news-and-events-bg.jpg");
+}
+#trueStoriesSection{
+	background-color: lightgrey;
+}
+footer{
+	background-color: black;
+}
