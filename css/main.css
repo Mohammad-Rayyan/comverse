@@ -1,18 +1,23 @@
-body {
-	margin-right: 20%;
-	margin-left: 20%;
-}
 nav{
 	background-color: white;
 }
-main{
-	background-image: url("../img/slide-bg-complexity.jpg");
+body{
+	/*background-image: url("../img/slide-bg-complexity.jpg");
+	background-attachment: fixed;
+	background-repeat: no-repeat;
+	*/
+	background-color: green;
 }
 #toDoSection{
 	background-color: blue;
 }
 #whatHappenSection{
+	/*
 	background-image: url("../img/news-and-events-bg.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	*/
+	background-color: red;
 }
 #trueStoriesSection{
 	background-color: lightgrey;
