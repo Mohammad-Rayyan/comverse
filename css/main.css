@@ -1,23 +1,48 @@
-nav{
-	background-color: white;
+
+html{
+	box-sizing:border-box;
 }
 body{
-	/*background-image: url("../img/slide-bg-complexity.jpg");
+	font-size:100%;
+	margin: 0;
+	padding: 0;
+	background-color: black;
+}
+.container{
+	width:800px;
+	margin:0px auto;
+}
+
+a{
+	text-decoration:none;
+}
+
+
+/* ----------------------------------   header   ------------------------------------- */
+
+header{
+	background-color: white;
+}
+
+nav{
+	padding-top: 8px;
+	padding-bottom: 8px;
+}
+
+
+main{
+	background-image: url("../img/slide-bg-complexity.jpg");
 	background-attachment: fixed;
 	background-repeat: no-repeat;
-	*/
-	background-color: green;
+	
 }
 #toDoSection{
 	background-color: blue;
 }
 #whatHappenSection{
-	/*
 	background-image: url("../img/news-and-events-bg.jpg");
+	background-attachment: fixed;
 	background-repeat: no-repeat;
-	background-size: contain;
-	*/
-	background-color: red;
 }
 #trueStoriesSection{
 	background-color: lightgrey;
