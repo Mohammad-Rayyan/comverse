@@ -29,6 +29,10 @@ nav{
 	padding-bottom: 8px;
 }
 
+.navList li{
+	display: inline;
+}
+
 
 main{
 	background-image: url("../img/slide-bg-complexity.jpg");
