@@ -1,16 +1,21 @@
+@import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-html{
-	box-sizing:border-box;
+html { font-size: 62.5%; } 
+
+* {
+	border: 1px solid red;
 }
 body{
+	font-family: 'Open Sans', Sans;
 	font-size:100%;
 	margin: 0;
 	padding: 0;
 	background-color: black;
 }
 .container{
-	width:800px;
+	width:940px;
 	margin:0px auto;
+	position: relative;
 }
 
 a{
@@ -22,16 +27,99 @@ a{
 
 header{
 	background-color: white;
+	padding: 1rem;
 }
 
 nav{
-	padding-top: 8px;
-	padding-bottom: 8px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+.Logo{
+	display: inline-block;
+}
+.navList{
+	display: inline-block;
+	margin: auto;
+    width: 50rem;
+
+	font-size: 1.4rem;
+}
+
+.langList{
+	display: inline-block;
+	margin: 0px;
+	padding: 0px;
+
+	width: 100%;
+	font-size: 1.4rem;
 }
 
 .navList li{
 	display: inline;
+	text-transform: uppercase;
+	text-align: center;
 }
+
+ header ul li+li:before{
+ 	padding: 0 0.6rem;
+    content: '';
+    position: relative;
+    background: url(../img/divider.png) center center no-repeat;
+}
+header ul a+a:before{
+ 	padding: 0 0.8rem;
+    content: '';
+    position: relative;
+    background: url(../img/divider.png) center center no-repeat;
+}
+.langList li{
+	display: inline;
+}
+
+
+#header-side{
+	display: inline-block;
+	position: absolute;
+	right: 0px;
+	width: 17rem;
+	height: 100%;
+}
+#header-side select{
+	border:none;
+}
+.searchButton{
+	position: absolute;
+	bottom: 0;
+	
+	width: 100%;
+}
+.searchButton input[type=text]{
+
+	background: url(../img/divider.png) 85% 50% no-repeat;
+	box-sizing: border-box;
+	width:100%;
+	height: 2.3rem;
+	border: 1px solid #d2d2d2;
+	border-radius: 8px;
+	box-sizing: border-box;
+}
+.searchButton input[type=submit]{
+	position: absolute;
+    top: 4px;
+    right: 0px;
+	
+	border: none;
+	background: url(../img/searchBtn.png) center no-repeat;
+	background-repeat: no-repeat;
+	width: 29px;
+	cursor: pointer;
+}
+
+
+/* ----------------------------------   header END  ------------------------------------- */
+
+
+
 
 
 main{
@@ -53,4 +141,17 @@ main{
 }
 footer{
 	background-color: black;
+}
+
+/*clear fix*/
+.cf:after,
+.cf:before {
+	content: '';
+	display: table;
+}
+.cf:after {
+	clear: both;
+}
+.cf {
+	zoom: 1;
 }
