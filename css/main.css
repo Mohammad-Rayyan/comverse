@@ -1,10 +1,10 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
 html { font-size: 62.5%; } 
-
+/*
 * {
 	border: 1px solid red;
-}
+}*/
 body{
 	font-family: 'Open Sans', Sans;
 	font-size:100%;
@@ -129,17 +129,18 @@ header ul a+a:before{
 main{
 	background: url(../img/slide-bg-complexity.jpg) top center no-repeat fixed;
 	box-shadow: 0 0 8px -2px #777 inset;
-	padding: 5rem 0;
+	padding: 5rem 0 1rem;
 	color: white;
 }
 
-main h3 {
+h3 {
 	margin-top: 0px;
     margin-bottom: 2rem;
     font-size: 2.7rem;
     letter-spacing: 0.2rem;
     font-weight: normal;
-    line-height: 1;
+    line-height: 1.2;
+    color: white;
 }
 h3 b {
     font-weight: bold;
@@ -207,6 +208,7 @@ p{
 	font: 2.2rem/1.5 "Trebuchet MS", "Open Sans", sans-serif;
     margin: 2rem 1.5rem;
     text-transform: capitalize;
+    font-weight: lighter;
 }
 .box{
 	width: 30%;
@@ -257,12 +259,86 @@ p{
 }
 /* ----------------------------------   main END   ------------------------------------- */
 
-
-
-
+/* ----------------------------------   toDoSection   ------------------------------------- */
 #toDoSection{
-	background-color: blue;
+	position: relative;
+    background: url(../img/services-bg.png) 1px center no-repeat, radial-gradient(#5DBCD7, #3596C0);
+    box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.5) inset;
+    padding: 5rem 0;
+    color: white;
 }
+#toDoSection h3{
+	text-align: center;
+    text-transform: uppercase;
+    font-size: 3rem;
+    margin-bottom: 4rem;
+}
+
+.solutions{
+	margin: 47px 15px 0 15px;
+    overflow: hidden;
+    padding-left: 0px;
+}
+#toDoSection li{
+	float: left;
+    width: calc(100%/6);
+    height: 140px;
+    position: relative
+}
+#toDoSection span{
+	position: relative;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 1.5em;
+    vertical-align: baseline;
+}
+.imHover{
+    display: none;
+}
+.imgHolder{
+	height: 64px;
+    position: relative;
+    margin-bottom: 18px;
+}
+.imgHolder img{
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+}
+#toDoSection a{
+	color: white;
+}
+
+.solution a:hover img {
+	display: none;
+}
+
+.solution a:hover .imHover {
+	display: inline-block;
+}
+
+.seeAll{
+	min-width: 21rem;
+    width: 19rem;
+    font-size: 1.5em;
+    margin: 0 auto;
+    text-transform: capitalize;
+}
+#toDoSection .arrow{
+	display: inline-block;
+	position: absolute;
+    top: 1rem;
+}
+/* ----------------------------------   toDoSection END   ------------------------------------- */
+
+
+
+
+
 #whatHappenSection{
 	background-image: url("../img/news-and-events-bg.jpg");
 	background-attachment: fixed;
