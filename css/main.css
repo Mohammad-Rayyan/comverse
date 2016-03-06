@@ -136,7 +136,7 @@ main{
 h3 {
 	margin-top: 0px;
     margin-bottom: 2rem;
-    font-size: 2.7rem;
+    font-size: 4rem;
     letter-spacing: 0.2rem;
     font-weight: normal;
     line-height: 1.2;
@@ -161,8 +161,12 @@ p{
     padding: 0.5rem 1.2rem;
     text-transform: uppercase;
     border: none;
+    height: 3rem;
     border-radius: 5px;
     box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.5);
+}
+.button:hover {
+    background: linear-gradient(#1183bc,#30a1d9);
 }
 .learnMore{
 	font: 1.5rem/2 "Open Sans", sans-serif;
@@ -270,7 +274,7 @@ p{
 #toDoSection h3,#whatHappenSection h3{
 	text-align: center;
     text-transform: uppercase;
-    font-size: 3rem;
+    font-size: 4rem;
     margin-bottom: 4rem;
 }
 
@@ -326,12 +330,14 @@ p{
     width: 19rem;
     font-size: 1.5em;
     margin: 0 auto;
+    text-align: center;
     text-transform: capitalize;
+    line-height: 3rem;
 }
 #toDoSection .arrow{
 	display: inline-block;
 	position: absolute;
-    top: 1rem;
+    top: 1.3rem;
 }
 /* ----------------------------------   toDoSection END   ------------------------------------- */
 
@@ -426,13 +432,167 @@ p{
 	color: black;
 }
 
-/* ----------------------------------   whatHappenSection   ------------------------------------- */
+/* ----------------------------------   whatHappenSection END  ------------------------------------- */
+
+/* ----------------------------------   trueStoriesSection   ------------------------------------- */
+
 #trueStoriesSection{
-	background-color: lightgrey;
+	background: #ececec;
+    color: #565656;
+    box-shadow: 0 0 8px -2px #777 inset;
 }
+#trueStoriesSection h3{
+	color: darkslategrey;
+	text-align: center;
+	text-transform: uppercase;
+    margin-bottom: 4rem;
+}
+#trueStoriesSection .container{
+	padding-top: 6rem;
+    padding-bottom: 4rem;
+}
+.success-listBig{
+	display: inline-block;
+	padding-left: 0px;
+	width: calc(100px*3 + 1.2rem*3.5);
+}
+.success-listMid{
+	display: inline-block;
+	padding-left: 0px;
+	width: calc(100px*2 + 1.2rem*2.5);
+}
+.tile{
+	display: inline-block;
+    overflow: hidden;
+    margin: 0.6rem;
+    box-sizing: border-box;
+    position: relative;
+}
+.bTile{
+	display: inline-block;
+    padding: 15px;
+    margin: 0.6rem;
+    box-sizing: border-box;
+    background: #3AA6DB;
+    vertical-align: text-bottom;
+}
+.animation-wrapper {
+	box-sizing: border-box;
+	padding: 15px;
+    position: relative;
+    width: inherit;
+    height: inherit;
+    background: #fff;
+    transition: all 0.2s linear;
+    bottom: 0;
+}
+.tile:hover .animation-wrapper {
+	bottom: 110%;
+}
+.backStories{
+	position: absolute;
+}
+.backStories .smallTile{
+	background: #3398CC;
+}
+.back-listBig,.back-listMid{
+	display: inline-block;
+	padding-left: 0px;
+}
+.back-listBig{
+	width: calc(100px*3 + 1.2rem*3.5);
+}
+.back-listMid{
+	width: calc(100px*2 + 1.2rem*2.5);
+}
+.smallTile{
+	height: 100px;
+	width: 100px;
+}
+.bigTile{
+	width: calc(100px*3 + 1.2rem*2.5);
+    height: calc(100px*2 + 1.2rem*1.5);
+}
+.midTile{
+	height: calc(100px*2 + 1.2rem*1.5);
+    width: calc(100px*2 + 1.5rem);
+}
+
+.person-quote {
+    overflow: hidden;
+    margin-bottom: 10px;
+    width: 100%;
+    border-bottom: 1px solid #dddddd;
+    padding-bottom: 18px;
+}
+.person-testimonial:before, .person-testimonial:after {
+    content: url(../img/quote-grey.png);
+    margin-left: 0.2rem;
+    margin-right: 0.2rem;
+}
+.person-img {
+    float: left;
+    margin-right: 20px;
+}
+.person-testimonial {
+    font-size: 17px;
+    line-height: 1.2;
+    margin-top: 0px;
+    margin-bottom:0px; 
+}
+.person-company-details {
+    margin-top: 10px;
+    overflow: hidden;
+    margin: 15px 0;
+    position: relative;
+}
+.person-name {
+    color: #7cc4e7;
+    font-size: 1.6rem;
+    padding: 1rem 0 0.5rem;
+    text-transform: uppercase;
+}
+.person-position {
+    font-size: 1.6rem;
+}
+.person-company-details img {
+    float: right;
+    position: absolute;
+    right: 0;
+    bottom: 6px;
+}
+.testimonials-small-font {
+    font-size: 14px;
+}
+.smallTile img {
+    width: 100%;
+    height: 100%;
+}
+.testimonials-hover-p {
+    font-size: 1.6rem;
+    line-height: 1.3;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+.testimonials-hover-p:before, .testimonials-hover-p:after {
+    content: url(../img/quote-blue.png);
+}
+#trueStoriesSection .button {
+    margin-top: 2rem;
+}
+/* ----------------------------------   trueStoriesSection END  ------------------------------------- */
+
+/* ----------------------------------   Footer  ------------------------------------- */
 footer{
-	background-color: black;
+	background: url(../img/footer-bg.png);
+    background-color: #575756;
+    color: #f8fafd;
+    padding: 1px;
+    box-shadow: inset 0 16px 20px -20px #000000;
 }
+/* ----------------------------------   Footer END  ------------------------------------- */
+
+
 
 /*clear fix*/
 .cf:after,
