@@ -135,7 +135,6 @@ input[type="checkbox"], input[type="radio"], label{
 main{
 	background: url(../img/slide-bg-complexity.jpg) top center no-repeat fixed;
 	box-shadow: 0 0 8px -2px #777 inset;
-	padding: 2rem 0 1rem;
 	color: white;
 }
 
@@ -272,7 +271,7 @@ p{
 /* ----------------------------------   toDoSection   ------------------------------------- */
 #toDoSection{
 	position: relative;
-    background: url(../img/services-bg.png) 1px center no-repeat, radial-gradient(#5DBCD7, #3596C0);
+    background: url(../img/weDoBG.png) repeat scroll 0 0, radial-gradient(ellipse at center, #59bedb 0%,#3399cc 100%);
     box-shadow: 0 1.5px 20px rgba(0, 0, 0, 0.5) inset;
     padding: 5rem 0;
     color: white;
@@ -756,8 +755,8 @@ footer .dateMon{
 		padding:0px;
 	}
 	nav {
-    padding-top: 10px;
-    padding-bottom: 10px;
+	    padding-top: 10px;	
+	    padding-bottom: 10px;
 	}
 	.container{
 		width:100%;
@@ -774,132 +773,132 @@ footer .dateMon{
 		display: none;
 	}
 	#hamburger-nav:checked + .navList{
-	display: block;
-    position: absolute;
-    width: 100%;
-    background: #F1F1F1;
-    top: 61px;
-    padding: 1rem;
-    z-index: 100;
+		display: block;
+	    position: absolute;
+	    width: 100%;
+	    background: #F1F1F1;
+	    top: 61px;
+	    padding: 1rem;
+	    z-index: 100;
 	}
 	#search-tap:checked + #header-side{
-	display: block;
-    position: absolute;
-    width: 100%;
-    background: #F1F1F1;
-    top: 61px;
-    z-index: 100;
+		display: block;
+	    position: absolute;
+	    width: 100%;
+	    background: #F1F1F1;
+	    top: 61px;
+	    z-index: 100;
 	}
    .logoSmall{
-   	display: inline-block;
+	   	display: inline-block;
    }
    .logoBig{
-   	display:none;
+	   	display:none;
    }
    .searchButton{
-   	display: inherit;
+	   	display: inherit;
    }
    .searchButton input[type=submit]{
-   	display: none;
+	   	display: none;
    }
    #search-tap{
-   	clip: rect(0, 0, 0, 0);
+	   	clip: rect(0, 0, 0, 0);
    }
    label[for="search-tap"] {
-   	position: absolute;
-   	display: inline-block;
-    width: 36px;
-    height: 36px;
-    right: 10px;
-    background: url(../img/searchBtnMobile.png) no-repeat scroll center center, linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);;
-	}
-	#search-tap:checked{
-
+	   	position: absolute;
+	   	display: inline-block;
+	    width: 36px;
+	    height: 36px;
+	    right: 10px;
+	    background: url(../img/searchBtnMobile.png) no-repeat scroll center center, linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);
 	}
 	#hamburger-nav{
-   	clip: rect(0, 0, 0, 0);
+	   	clip: rect(0, 0, 0, 0);
    }
 	label[for="hamburger-nav"] {
-   	display: inline-block;
-    width: 36px;
-    height: 36px;
-    right: 10px;
-    background: url(../img/hamburger-icon.png) no-repeat scroll center center, linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);;
+	   	display: inline-block;
+	    width: 36px;
+	    height: 36px;
+	    right: 10px;
+	    background: url(../img/hamburger-icon.png) no-repeat scroll center center, linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);
 	}
 	#hamburger-nav:checked{
 
 	}
    #header-side {
-    display: inline-block;
-    right: 0rem;
-    width: auto;
-    height: auto;
+	    display: inline-block;
+	    right: 0rem;
+	    width: auto;
+	    height: auto;
 	}
 	.Logo {
-    display: inline-block;
-    position: absolute;
-    left: calc(50% - 50px);
+	    display: inline-block;
+	    position: absolute;
+	    left: calc(50% - 50px);
 	}
 	label {
-    cursor: pointer;
-    border: 1px solid #d9d9d9;
-    border-radius: 5px;
-    margin-left: 1rem;
-    margin-right: 1rem;
+	    cursor: pointer;
+	    border: 1px solid #d9d9d9;
+	    border-radius: 5px;
+	    margin-left: 1rem;
+	    margin-right: 1rem;
 	}
 	.navList li {
-    text-transform: uppercase;
-    text-align: left;
-    display:block;
+	    text-transform: uppercase;
+	    text-align: left;
+	    display:block;
 	}
 	.navList li::before {
-    content: url(../img/navCollapseArrowRight.png);
-    vertical-align: text-bottom;
-    margin-left: 1rem;
-    margin-right: 1rem;
-    display: inline-block;
+	    content: url(../img/navCollapseArrowRight.png);
+	    vertical-align: text-bottom;
+	    margin-left: 1rem;
+	    margin-right: 1rem;
+	    display: inline-block;
 	}
 	header ul a+a:before {
-    padding: 0 0.8rem;
-    content: '';
-    position: relative;
-    background: none;
+	    padding: 0 0.8rem;
+	    content: '';
+	    position: relative;
+	    background: none;
 	}
 	.searchButton input[type=text] {
-    box-sizing: border-box;
-    position: absolute;
-    width: 100%;
-    font-size: 2rem;
-    height: 4rem;
-    border: 1px solid #d2d2d2;
-    border-radius: 8px;
-    box-sizing: border-box;
-    padding: 2rem;
-    background: white;
+	    box-sizing: border-box;
+	    position: absolute;
+	    width: 100%;
+	    font-size: 2rem;
+	    height: 4rem;
+	    border: 1px solid #d2d2d2;
+	    border-radius: 8px;
+	    box-sizing: border-box;
+	    padding: 2rem;
+	    background: white;
 	}
+	/*--------------------------------END header-------------------------------*/
+	/*-------------------------------- main -------------------------------*/
 	.slide {
-    background: url("../images/bg/solutions-bg.png") repeat scroll center 0 rgba(64, 164, 205, 0.8);
-    margin-top: -3rem;
-    padding: 1rem;
-    margin-bottom: 1.5rem;
+	    background: url(../img/weDoBG.png) repeat scroll 0 0, radial-gradient(ellipse at center, #59bedb 0%,#3399cc 100%);
+	    opacity: 0.8;
+	    margin-top: -1rem;
+	    padding: 1rem;
+	    margin-bottom: 1.5rem;
 	}
 	.learnMore {
-    margin-left: 1rem;
+	    margin-left: 1rem;
 	}
 	.box {
-    width: 100%;
-    opacity: 1;
-    margin-bottom: 0.5rem;
-    margin-top: 0.5rem;
+	    width: 100%;
+	    opacity: 1;
+	    margin-bottom: 0.5rem;
+	    margin-top: 0.5rem;
 	}
 	#boxes{
 		background:white;
 		margin-bottom: 0rem;
 	}
 	.slides-nav {
-    margin-top: 10rem;
-    padding: 1rem;
-    margin-bottom: 0rem;
+	    margin-top: 10rem;
+	    padding: 1rem;
+	    margin-bottom: 0rem;
 	}
 	.slides-nav li a {
 		color: black;
@@ -908,7 +907,44 @@ footer .dateMon{
     	text-align: center;
     	font-size: 2em;
 	}
-   /*--------------------------------END header-------------------------------*/
+	/*--------------------------------END main-------------------------------*/
+	/*-------------------------------- toDoSection -------------------------------*/
+	.imgHolder {
+		text-align: center;
+	}
+	#toDoSection li {
+    width: calc(100%/3);
+	}
+	/*-------------------------------- END toDoSection -------------------------------*/
+	/*-------------------------------- whatHappenSection -------------------------------*/
+	 #whatHappenSection{
+		padding-right:5rem;
+		padding-bottom: 1rem;
+	}
+	#whatHappenSection .container{
+		padding:1rem; 
+	}
+	.news {
+	    display: block;
+	    width: 100%;
+	    margin-bottom: 4rem;
+	}
+	.events {
+	    display: block;
+	    width: 100%;
+	}
+	.event{
+		display: block;
+	    width: 100%;
+	    margin-bottom: 2rem;
+	}
+	.new a:first-child, .event a:first-child{
+	   display: block;
+	   width: 100%;
+	}
+    /*--------------------------------END whatHappenSection-------------------------------*/
+   
+
    
 }
 
