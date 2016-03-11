@@ -42,6 +42,9 @@ nav{
 .Logo{
 	display: inline-block;
 }
+.logoSmall{
+	display:none;
+}
 .navList{
 	display: inline-block;
 	margin: auto;
@@ -85,7 +88,6 @@ header ul a+a:before{
 #header-side{
 	display: inline-block;
 	position: absolute;
-	right: 0px;
 	width: 17rem;
 	height: 100%;
 }
@@ -120,6 +122,9 @@ header ul a+a:before{
 	width: 29px;
 	cursor: pointer;
 }
+input[type="checkbox"], input[type="radio"], label{
+   	display: none;
+   }
 
 
 /* ----------------------------------   header END  ------------------------------------- */
@@ -268,7 +273,7 @@ p{
 #toDoSection{
 	position: relative;
     background: url(../img/services-bg.png) 1px center no-repeat, radial-gradient(#5DBCD7, #3596C0);
-    box-shadow: 0 1.5px 2px rgba(0, 0, 0, 0.5) inset;
+    box-shadow: 0 1.5px 20px rgba(0, 0, 0, 0.5) inset;
     padding: 5rem 0;
     color: white;
 }
@@ -440,7 +445,7 @@ p{
 #trueStoriesSection{
 	background: #ececec;
     color: #565656;
-    box-shadow: 0 0 8px -2px #777 inset;
+    box-shadow: 0 1.5px 20px rgba(0, 0, 0, 0.5) inset;
 }
 #trueStoriesSection h3{
 	color: darkslategrey;
@@ -740,3 +745,140 @@ footer .dateMon{
 .cf {
 	zoom: 1;
 }
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ------------------------- mobile  ------------------------------------- */
+/* ----------------------------------------------------------------------- */
+
+@media screen and (max-width: 939px) {
+	header{
+		padding:0px;
+	}
+	nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+	}
+	.container{
+		width:100%;
+	}
+	.langList{
+		display: none;
+	}
+	
+   /*-------------------------------- header-------------------------------*/
+   .navList{
+		display: none;
+	}
+	#hamburger-nav:checked + .navList{
+	display: block;
+    position: absolute;
+    width: 100%;
+    background: #F1F1F1;
+    top: 61px;
+    padding: 1rem;
+    z-index: 100;
+	}
+	#search-tap:checked + #header-side{
+	display: block;
+    position: absolute;
+    width: 100%;
+    background: #F1F1F1;
+    top: 61px;
+    z-index: 100;
+	}
+   .logoSmall{
+   	display: inline-block;
+   }
+   .logoBig{
+   	display:none;
+   }
+   .searchButton{
+   	display: inherit;
+   }
+   .searchButton input[type=submit]{
+   	display: none;
+   }
+   #search-tap{
+   	clip: rect(0, 0, 0, 0);
+   }
+   label[for="search-tap"] {
+   	position: absolute;
+   	display: inline-block;
+    width: 36px;
+    height: 36px;
+    right: 10px;
+    background: url(../img/searchBtnMobile.png) no-repeat scroll center center, linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);;
+	}
+	#search-tap:checked{
+
+	}
+	#hamburger-nav{
+   	clip: rect(0, 0, 0, 0);
+   }
+	label[for="hamburger-nav"] {
+   	display: inline-block;
+    width: 36px;
+    height: 36px;
+    right: 10px;
+    background: url(../img/hamburger-icon.png) no-repeat scroll center center, linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);;
+	}
+	#hamburger-nav:checked{
+
+	}
+   #header-side {
+    display: inline-block;
+    right: 0rem;
+    width: auto;
+    height: auto;
+	}
+	.Logo {
+    display: inline-block;
+    position: absolute;
+    left: calc(50% - 50px);
+	}
+	label {
+    cursor: pointer;
+    border: 1px solid #d9d9d9;
+    border-radius: 5px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+	}
+	.navList li {
+    text-transform: uppercase;
+    text-align: left;
+    display:block;
+	}
+	.navList li::before {
+    content: url(../img/navCollapseArrowRight.png);
+    vertical-align: text-bottom;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    display: inline-block;
+	}
+	header ul a+a:before {
+    padding: 0 0.8rem;
+    content: '';
+    position: relative;
+    background: none;
+	}
+	.searchButton input[type=text] {
+    box-sizing: border-box;
+    position: absolute;
+    width: 100%;
+    font-size: 2rem;
+    height: 4rem;
+    border: 1px solid #d2d2d2;
+    border-radius: 8px;
+    box-sizing: border-box;
+    padding: 2rem;
+    background: white;
+	}
+   /*--------------------------------END header-------------------------------*/
+   
+}
+
+/* ----------------------------------------------------------------------- */
+/* ----------------------------------------------------------------------- */
+/* ------------------------- mobile END ------------------------------------- */
+/* ----------------------------------------------------------------------- */
