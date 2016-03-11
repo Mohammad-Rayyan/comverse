@@ -767,6 +767,9 @@ footer .dateMon{
 	}
 	
    /*-------------------------------- header-------------------------------*/
+   main{
+   	    padding-bottom: 0px;
+   }
    .navList{
 		display: none;
 	}
@@ -873,6 +876,37 @@ footer .dateMon{
     box-sizing: border-box;
     padding: 2rem;
     background: white;
+	}
+	.slide {
+    background: url("../images/bg/solutions-bg.png") repeat scroll center 0 rgba(64, 164, 205, 0.8);
+    margin-top: -3rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+	}
+	.learnMore {
+    margin-left: 1rem;
+	}
+	.box {
+    width: 100%;
+    opacity: 1;
+    margin-bottom: 0.5rem;
+    margin-top: 0.5rem;
+	}
+	#boxes{
+		background:white;
+		margin-bottom: 0rem;
+	}
+	.slides-nav {
+    margin-top: 10rem;
+    padding: 1rem;
+    margin-bottom: 0rem;
+	}
+	.slides-nav li a {
+		color: black;
+		width: 1.5em;
+    	height: 1.5em;
+    	text-align: center;
+    	font-size: 2em;
 	}
    /*--------------------------------END header-------------------------------*/
    
