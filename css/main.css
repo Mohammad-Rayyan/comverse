@@ -728,6 +728,9 @@ footer .dateMon{
 .copyRights a {
     color: #969696;
 }
+.mobile-footer{
+	display: none;
+}
 /* ----------------------------------   Footer END  ------------------------------------- */
 
 
@@ -943,6 +946,104 @@ footer .dateMon{
 	   width: 100%;
 	}
     /*--------------------------------END whatHappenSection-------------------------------*/
+    /*-------------------------------- trueStoriesSection-------------------------------*/
+	.backStories{
+		display: none;
+	}
+	.success-listMid{
+		display: none;
+	}
+	.tile:hover .animation-wrapper {
+    	bottom: 0px;
+	}
+	.success-listBig {
+    display: block;
+    margin: 0 auto;
+	}
+    /*--------------------------------END trueStoriesSection-------------------------------*/
+    /*-------------------------------- footer -------------------------------*/
+	footer .container{
+		display: none;
+	}
+	.mobile-footer{
+		display: block;
+	}
+	.mobile-footer-links {
+	    height: 45px;
+	    text-transform: uppercase;
+	    position: relative;
+	    border-bottom: 1px solid #000;
+	    border-top: 1px solid #3c3c3c;
+	}
+	.mobile-footer .spacing {
+	    padding-top: 1rem;
+    	padding-left: 1rem;
+	}
+	.block-links {
+	    display: block;
+	    height: 100%;
+	}
+	.mobile-footer-links:hover {
+	    background: -webkit-gradient( linear, left top, left bottom, color-stop(0.05, #ccc), color-stop(1, #9e9e9e) );
+	}
+	footer ul {
+		margin:0px;
+	}
+	.visit-text {
+	    display: inline-block;
+	    vertical-align: middle;
+	}
+	.social-links-list {
+	    display: inline-block;
+	    margin: 0px;
+	    position: initial;
+	}
+	.language-select {
+	    background: url("img/languageArrow.png") no-repeat right;
+	    background-size: auto 42%;
+	    width: 88px;
+	    background-position-x: 73px;
+	    -moz-appearance: none;
+	    color: #fff;
+	}
+	.language-dropdown{
+		display: inline-block;
+	}
+	.language-dropdown label {
+		display: inline-block;
+	    cursor: pointer;
+	    border: none;
+	    border-radius: 0px;
+	    margin-left: 1rem;
+	    margin-right: 1rem;
+	}
+	option {
+	    font-weight: normal;
+	    display: block;
+	    white-space: pre;
+	    min-height: 1.2em;
+	    padding: 0px 2px 1px;
+	}
+	.language-option {
+	    background-color: rgba(0, 0, 0, 0.4);
+	}
+	.copyright-li {
+	    background: #fff;
+	    color: black;
+    	font-weight: 900;
+	    font-size: 14px;
+	    padding: 10px 0 10px 15px;
+	}
+	.copyright {
+	    display: inline-block;
+	}
+	.siteMap:before, .privacy:before{
+		padding: 0 0.6rem;
+	    content: '';
+	    position: relative;
+	    background: url(../img/divider.png) center center no-repeat;
+	}
+    /*--------------------------------END footer -------------------------------*/
    
 
    
