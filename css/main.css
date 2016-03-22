@@ -1029,10 +1029,7 @@ footer .dateMon{
 	}
 	.language-select {
 	    background: url(../img/languageArrow.png) no-repeat right;
-	    background-size: auto 42%;
 	    width: 88px;
-	    background-position-x: 73px;
-	    -moz-appearance: none;
 	    color: #fff;
 	}
 	.language-dropdown{
