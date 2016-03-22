@@ -14,7 +14,7 @@
 						<img class="logoBig" src="img/comverse-logo.png" alt="comverse logo">
 						<img class="logoSmall" src="img/comverse-logo-medium.png" alt="comverse logo">
 					</a>
-					<label for="hamburger-nav" value="menu"></label>
+					<label for="hamburger-nav">menu</label>
 					<input type="checkbox" id="hamburger-nav">
 					<ul class="navList">
 						<li><a href="#">your needs</a></li>
@@ -22,12 +22,13 @@
 						<li><a href="#">news & media</a></li>
 						<li><a href="#">about comverse</a></li>
 					</ul>
-					<label for="search-tap" value="search"></label>
+					<label for="search-tap">search</label>
 					<input type="checkbox" id="search-tap">
 					<div id="header-side">
 						<ul class="langList">
 						<li>
-							<select>
+							<label for="language_select">select language</label>
+							<select id="language_select">
 							  <option value="En">EN</option>
 							  <option value="AR">AR</option>
 							  <option value="HE">HE</option>
@@ -37,8 +38,10 @@
 						</li>
 					</ul>
 					<form class="searchButton">
-						<input type="text">
-						<input type="submit" value="" class="search">
+						<label for="seach-text">seach text</label>
+						<input type="text" id="search-text">
+						<label for="search-button">search</label>
+						<input type="submit" value="" id="search-button" class="search">
 					</form>
 					</div>
 				</nav>
@@ -394,7 +397,10 @@
 					</div>
 					<div>
 						<h4>subscribe to comverse</h4>
-						<form><input class="submit-mail" type="text"><button class="submit-mail-button" name="signUp">SIGN UP</button></form>
+						<form>
+						<label for="email">email</label>
+						<input class="submit-mail" id="email" type="text">
+						<button class="submit-mail-button" name="signUp">SIGN UP</button></form>
 					</div>
 						<ul class="social-links-list">
 							<li class="social-link">

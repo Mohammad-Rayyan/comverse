@@ -132,6 +132,9 @@ header ul a+a:before{
 input[type="checkbox"], input[type="radio"], label{
    	display: none;
    }
+.searchButton label{
+    display:none;
+}
 
 /* ----------------------------------   header END  ------------------------------------- */
 
@@ -819,6 +822,7 @@ footer .dateMon{
    label[for="search-tap"] {
 	   	position: absolute;
 	   	display: inline-block;
+        font-size: 0px;
 	    width: 36px;
 	    height: 36px;
 	    right: 10px;
@@ -830,10 +834,15 @@ footer .dateMon{
 	label[for="hamburger-nav"] {
 	   	display: inline-block;
 	    width: 36px;
+        font-size: 0px;
+        vertical-align: -webkit-baseline-middle;
 	    height: 36px;
 	    right: 10px;
 	    background: url(../img/hamburger-icon.png) no-repeat scroll center center, linear-gradient(to bottom, #f2f2f2 0%,#e5e5e5 100%);
 	}
+    label[for="language_select"] {
+        display: none;
+    }
 	#hamburger-nav:checked{
 
 	}
