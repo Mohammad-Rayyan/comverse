@@ -593,7 +593,7 @@ p{
 }
 .back-top {
     position: absolute;
-    left: 1rem;
+    right: 1rem;
     bottom: 0px;
     display: block;
     width: 64px;
@@ -989,6 +989,9 @@ footer .dateMon{
     display: block;
     margin: 0 auto;
 	}
+    .back-top {
+    background: url(../img/back_top_tab.png) no-repeat top center;
+}
     /*--------------------------------END trueStoriesSection-------------------------------*/
     /*-------------------------------- footer -------------------------------*/
 	footer .container{
