@@ -1,6 +1,9 @@
 @import url(http://fonts.googleapis.com/css?family=Open+Sans);
 
-html { font-size: 62.5%; } 
+html { 
+    font-size: 62.5%;
+    overflow-x:hidden;
+} 
 
 /** {
 	border: 1px solid red;
@@ -129,7 +132,6 @@ header ul a+a:before{
 input[type="checkbox"], input[type="radio"], label{
    	display: none;
    }
-
 
 /* ----------------------------------   header END  ------------------------------------- */
 
@@ -788,13 +790,16 @@ footer .dateMon{
 	    padding: 1rem;
 	    z-index: 100;
 	}
+    #header-side,#header-side + ul{
+        display: none;
+    }
 	#search-tap:checked + #header-side{
 		display: block;
-	    position: absolute;
-	    width: 100%;
-	    background: #F1F1F1;
-	    top: 61px;
-	    z-index: 100;
+        position: relative;
+        width: 100%;
+        background: #F1F1F1;
+        top: 1rem;
+        z-index: 100;
 	}
    .logoSmall{
 	   	display: inline-block;
@@ -805,7 +810,7 @@ footer .dateMon{
    .searchButton{
 	   	display: inherit;
    }
-   .searchButton input[type=submit]{
+   .searchButton input[type=submit],.searchButton input[type=search]{
 	   	display: none;
    }
    #search-tap{
@@ -831,12 +836,6 @@ footer .dateMon{
 	}
 	#hamburger-nav:checked{
 
-	}
-   #header-side {
-	    display: inline-block;
-	    right: 0rem;
-	    width: auto;
-	    height: auto;
 	}
 	.Logo {
 	    display: inline-block;
