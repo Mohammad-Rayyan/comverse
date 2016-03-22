@@ -71,7 +71,7 @@ nav{
 	text-transform: uppercase;
 	text-align: center;
 }
-.navList li:hover{
+nav a:hover{
     text-decoration: underline;
 }
 
@@ -591,6 +591,16 @@ p{
 #trueStoriesSection .button {
     margin-top: 2rem;
 }
+.back-top {
+    position: absolute;
+    left: 1rem;
+    bottom: 0px;
+    display: block;
+    width: 64px;
+    height: 31px;
+    text-indent: -9999px;
+    background: url(../img/back_top.png) no-repeat top center;
+}
 /* ----------------------------------   trueStoriesSection END  ------------------------------------- */
 
 /* ----------------------------------   Footer  ------------------------------------- */
@@ -789,7 +799,7 @@ footer .dateMon{
 	    position: absolute;
 	    width: 100%;
 	    background: #F1F1F1;
-	    top: 61px;
+	    top: 57px;
 	    padding: 1rem;
 	    z-index: 100;
 	}
@@ -861,6 +871,8 @@ footer .dateMon{
 	.navList li {
 	    text-transform: uppercase;
 	    text-align: left;
+        font-size: 2rem;
+        height: 4rem;
 	    display:block;
 	}
 	.navList li::before {
