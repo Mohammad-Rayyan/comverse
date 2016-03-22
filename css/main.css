@@ -20,6 +20,7 @@ body{
 
 a{
 	text-decoration:none;
+    color: black;
 }
 
 ul{
@@ -66,6 +67,9 @@ nav{
 	display: inline;
 	text-transform: uppercase;
 	text-align: center;
+}
+.navList li:hover{
+    text-decoration: underline;
 }
 
  header ul li+li:before{
@@ -367,7 +371,7 @@ p{
 	display: inline-block;
 	width: 49%;
 }
-.new a:first-child,.event a:first-child{
+.new > a,.event > a{
 	float: left;
     background: rgba(255,255,255, 0.4);
     color: #3C3C3C;
@@ -377,7 +381,7 @@ p{
     padding: 1rem;
     margin-bottom: 1rem;
 }
-.new a:first-child:hover,.event a:first-child:hover{
+.new > a:hover,.event > a:hover{
 	background: rgba(255,255,255, 0.7);
 }
 #whatHappenSection #news,#whatHappenSection #events{
@@ -413,25 +417,22 @@ p{
     padding-top: 0px;
     line-height: 1.5;
 }
-.allEvents,.allNews{
+.allEvents a,.allNews a{
 	font-size: 1.5rem;
-	color: white ;
+    margin-left: 1rem;
+	color: inherit ;
 }
 .allEvents:before {
 	content: url(../img/eventListIconEvents.png);
-	margin-right: 1rem;
 }
 .allNews:before {
 	content: url(../img/eventListIconNews.png);
-	margin-right: 1rem;
 }
 .allEvents:hover:before {
 	content: url(../img/eventListIconEvents_hover.png);
-	margin-right: 1rem;
 }
 .allNews:hover:before {
 	content: url(../img/eventListIconNews_hover.png);
-	margin-right: 1rem;
 }
 .allNews:hover,.allEvents:hover{
 	color: black;
@@ -614,6 +615,9 @@ footer li{
 }
 footer a{
 	color: inherit;
+}
+footer a:hover {
+    text-decoration: underline;
 }
 h4{
 	font-size: 1.6em;
@@ -876,6 +880,11 @@ footer .dateMon{
 	    padding: 2rem;
 	    background: white;
 	}
+    header ul li+li:before {
+        padding: 0rem;
+        background: none;
+    }
+
 	/*--------------------------------END header-------------------------------*/
 	/*-------------------------------- main -------------------------------*/
 	.slide {
@@ -941,7 +950,7 @@ footer .dateMon{
 	    width: 100%;
 	    margin-bottom: 2rem;
 	}
-	.new a:first-child, .event a:first-child{
+	.new > a, .event > a{
 	   display: block;
 	   width: 100%;
 	}
@@ -999,7 +1008,7 @@ footer .dateMon{
 	    position: initial;
 	}
 	.language-select {
-	    background: url("img/languageArrow.png") no-repeat right;
+	    background: url(../img/languageArrow.png) no-repeat right;
 	    background-size: auto 42%;
 	    width: 88px;
 	    background-position-x: 73px;
